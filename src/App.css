@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background: #18181a;
+  color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.HomeProducts {
+  width: 100vw;
+}
+.ProductList {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 15px;
+}
+.ProductOpen {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+  & img {
+    width: 50%;
+    height: 70vh;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+.AddProduct {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & img {
+    width: 80%;
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+.ProductInputs {
+  display: flex;
+  min-width: 370px;
+  height: 40vh;
+  gap: 20px;
+  flex-direction: column;
+  & input {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  & textarea {
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 10vh;
+  }
+}
+
+@media (min-width: 450px) {
+  .AddProduct {
+    & img {
+      height: 40vh;
+      width: auto;
+    }
+  }
+}
+@media (max-width: 590px) {
+  .ProductOpen {
+    & img {
+      width: 80%;
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 655px) {
+  .ProductList {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,24 @@
+.Card {
+  max-width: 370px;
+  min-width: 300px;
+  border-radius: 20px;
+  border: 2px solid aliceblue;
+  padding: 15px;
+  & img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  & h2 {
+    margin: 7px 20px;
+  }
+  & button {
+    padding: 7px 25px;
+    border: none;
+    background: aliceblue;
+    border-radius: 10px;
+    margin-top: 7px;
+    cursor: pointer;
+  }
+}
